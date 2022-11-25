@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react';
+import axios from 'axios';
+import { mockedPokemonList, renderWithProviders } from './testUtils';
+import { act } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Componente principal da aplicação', () => {
+	it('renderiza corretamente o componente', async () => {
+		await axios.get.mockReturnValue(mockedPokemonList);
+		// eslint-disable-next-line testing-library/no-unnecessary-act
+		await act(async () => {
+			expect(renderWithProviders(<App />)).toMatchSnapshot();
+		});
+	});
 });
