@@ -1,0 +1,17 @@
+@import '../../assets/colors.scss';
+
+.pokedex__header {
+  align-items: center;
+  background-color: $red;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 10vw;
+}
+
+.header__title,
+.header__actions {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
