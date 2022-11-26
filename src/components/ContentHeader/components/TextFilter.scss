@@ -1,0 +1,21 @@
+@import '../../../assets/colors.scss';
+
+.textFilter__container {
+	width: 50%;
+}
+
+.MuiOutlinedInput-root {
+	&.textFilter__input {
+		background-color: $light-gray;
+		border-radius: 2rem;
+		font-size: 1rem;
+	}
+}
+
+.MuiIconButton-root {
+	&.textFilter__icon {
+		color: $red;
+		font-size: 1rem;
+		padding-right: 1rem;
+	}
+}
