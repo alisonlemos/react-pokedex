@@ -1,0 +1,10 @@
+@import '../../assets/colors.scss';
+
+.contentMain__section {
+	display: flex;
+	aside {
+		display: flex;
+		flex-direction: column;
+		width: 15%;
+	}
+}
