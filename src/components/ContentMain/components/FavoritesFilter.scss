@@ -1,0 +1,14 @@
+@import '../../../assets/colors.scss';
+
+.favoriteFilter__switch {
+	.MuiButtonBase-root {
+		&.MuiSwitch-switchBase {
+			&.Mui-checked {
+				color: $red;
+				& + .MuiSwitch-track {
+					background-color: $red;
+				}
+			}
+		}
+	}
+}
