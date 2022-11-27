@@ -1,5 +1,5 @@
-import { orderValues } from '../services';
-import { initialState, mockedPokemonList } from '../testUtils';
+import { orderValues } from '@/services';
+import { initialState, mockedPokemonList } from '@/testUtils';
 import reducer, {
 	toggleLoading,
 	updateCategoriesFilter,

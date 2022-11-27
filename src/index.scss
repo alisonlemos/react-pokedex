@@ -102,12 +102,14 @@
 
 body {
 	font-family: 'Titillium Web', sans-serif;
-	color: $font;
+	color: var(--font);
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-h3 {
-	font-weight: 500;
+	h3 {
+		font-weight: 500;
+	}
+	.MuiInputBase-root {
+		font-family: 'Titillium Web', sans-serif;
+	}
 }

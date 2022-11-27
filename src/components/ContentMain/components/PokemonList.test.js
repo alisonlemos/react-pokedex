@@ -1,11 +1,8 @@
 import { screen } from '@testing-library/react';
-import { setupStore } from '../../../store';
-import {
-	updatePokemonList,
-	updateFavoriteList,
-} from '../../../store/pokedexSlice';
-import { mockedPokemonList, renderWithProviders } from '../../../testUtils';
 import userEvent from '@testing-library/user-event';
+import { setupStore } from '@/store';
+import { updatePokemonList, updateFavoriteList } from '@/store/pokedexSlice';
+import { mockedPokemonList, renderWithProviders } from '@/testUtils';
 
 import PokemonList from './PokemonList';
 

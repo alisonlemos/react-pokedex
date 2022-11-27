@@ -1,8 +1,10 @@
-$font: #333333;
-$dark-gray: #828282;
-$light-gray: #f2f2f2;
-$red: #e2350d;
-$white: #ffffff;
+:root {
+	--font: #333333;
+	--dark-gray: #828282;
+	--light-gray: #f2f2f2;
+	--red: #e2350d;
+	--white: #ffffff;
+}
 
 $pokemon-type-colors: (
 	fire: #ee7f33,

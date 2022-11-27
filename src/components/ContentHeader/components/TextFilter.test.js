@@ -1,6 +1,6 @@
 import { fireEvent, screen } from '@testing-library/react';
-import { renderWithProviders } from '../../../testUtils';
 import userEvent from '@testing-library/user-event';
+import { renderWithProviders } from '@/testUtils';
 
 import TextFilter from './TextFilter';
 

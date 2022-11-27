@@ -4,9 +4,10 @@ import MenuItem from '@mui/material/MenuItem';
 
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateOrder } from '../../../store/pokedexSlice';
+
+import { updateOrder } from '@/store/pokedexSlice';
+import { orderValues } from '@/services';
 import './SelectOrder.scss';
-import { orderValues } from '../../../services';
 
 function SelectOrder() {
 	const [option, setOption] = useState('NATIONAL_NUMBER_ASC');
@@ -43,6 +44,7 @@ function SelectOrder() {
 		<FormControl className="pokedex__selectOrder" variant="outlined">
 			<label htmlFor="select-order">Ordenar por </label>
 			<Select
+				size="small"
 				id="select-order"
 				value={option}
 				onChange={handleChange}

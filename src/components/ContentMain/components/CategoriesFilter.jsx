@@ -1,8 +1,11 @@
 import { Chip } from '@mui/material';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 import { useDispatch, useSelector } from 'react-redux';
-import { updateCategoriesFilter } from '../../../store/pokedexSlice';
+
+import { updateCategoriesFilter } from '@/store/pokedexSlice';
 import './CategoriesFilter.scss';
 
 function CategoriesFilter() {

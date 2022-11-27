@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { mockedPokemonList } from '../testUtils';
-
+import { mockedPokemonList } from '@/testUtils';
 import { getPokemonList } from './index';
 
 describe('Serviço para chamadas HTTP', () => {

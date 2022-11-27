@@ -1,9 +1,9 @@
 import { screen } from '@testing-library/react';
-import { setupStore } from '../../../store';
-import { updateCategoriesList } from '../../../store/pokedexSlice';
-import { renderWithProviders } from '../../../testUtils';
 import userEvent from '@testing-library/user-event';
 
+import { setupStore } from '@/store';
+import { updateCategoriesList } from '@/store/pokedexSlice';
+import { renderWithProviders } from '@/testUtils';
 import CategoriesFilter from './CategoriesFilter';
 
 describe('Componente de Filtro por categoria(tipo)', () => {

@@ -1,10 +1,9 @@
 import { fireEvent, screen, within } from '@testing-library/react';
-import { setupStore } from '../../../store';
-import { updateOrder } from '../../../store/pokedexSlice';
-import { renderWithProviders } from '../../../testUtils';
-
+import { setupStore } from '@/store';
+import { updateOrder } from '@/store/pokedexSlice';
+import { renderWithProviders } from '@/testUtils';
+import { orderValues } from '@/services';
 import SelectOrder from './SelectOrder';
-import { orderValues } from '../../../services';
 
 describe('Componente de Ordenação', () => {
 	it('deve atualizar o state order com o valor referente ordenação por numero ascendente', async () => {

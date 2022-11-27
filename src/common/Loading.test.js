@@ -1,4 +1,4 @@
-import { renderWithProviders } from '../testUtils';
+import { renderWithProviders } from '@/testUtils';
 import Loading from './Loading';
 
 describe('Componente Loading', () => {

@@ -2,11 +2,14 @@ import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 import { useCallback, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { updateSearchKey } from '../../../store/pokedexSlice';
+
+import { updateSearchKey } from '@/store/pokedexSlice';
 import './TextFilter.scss';
 
 function TextFilter() {
@@ -42,6 +45,7 @@ function TextFilter() {
 		<FormControl className="textFilter__container" variant="outlined">
 			<OutlinedInput
 				type="text"
+				size="small"
 				value={searchKey}
 				onChange={handleChange}
 				className="textFilter__input"

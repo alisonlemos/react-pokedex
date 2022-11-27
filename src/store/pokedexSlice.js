@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { orderValues } from '../services';
+import { orderValues } from '@/services';
 
 const initialState = {
 	pokemonList: [],

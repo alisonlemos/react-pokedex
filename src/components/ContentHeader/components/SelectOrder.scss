@@ -1,23 +1,21 @@
-@import '../../../assets/colors.scss';
-
 .pokedex__selectOrder {
-	color: $dark-gray;
+	color: var(--dark-gray);
 	align-items: center;
 	gap: 1rem;
 	&.MuiFormControl-root {
 		flex-direction: row;
 	}
 	.MuiOutlinedInput-notchedOutline {
-		border-color: $red;
+		border-color: var(--red);
 		border-radius: 2rem;
 	}
 	.MuiInputBase-root:hover {
 		.MuiOutlinedInput-notchedOutline {
-			border-color: $red;
+			border-color: var(--red);
 		}
 	}
 	svg,
 	.MuiOutlinedInput-input {
-		color: $red;
+		color: var(--red);
 	}
 }

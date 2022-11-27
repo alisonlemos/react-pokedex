@@ -1,6 +1,6 @@
 import { Switch } from '@mui/material';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateFavoriteFilter } from '../../../store/pokedexSlice';
+import { updateFavoriteFilter } from '@/store/pokedexSlice';
 import './FavoritesFilter.scss';
 
 function FavoritesFilter() {

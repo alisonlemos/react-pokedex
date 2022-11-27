@@ -1,5 +1,3 @@
-@import '../../../assets/colors.scss';
-
 .categoriesFilter__container {
 	align-content: flex-start;
 	display: flex;
@@ -9,23 +7,23 @@
 		width: 100%;
 	}
 	.categoryFilter__item {
-		color: $red;
+		color: var(--red);
 		font-size: 0.75rem;
-		background-color: $white;
-		border: 1px solid $red;
+		background-color: var(--white);
+		border: 1px solid var(--red);
 		justify-content: flex-start;
 	}
 	.MuiChip-root {
 		.categoryFilter__item__icon {
-			color: $red;
+			color: var(--red);
 			font-size: 0.7rem;
 		}
 	}
 	.categoryFilter__item__selected {
-		background-color: $red;
-		color: $white;
+		background-color: var(--red);
+		color: var(--white);
 		.categoryFilter__item__icon {
-			color: $white;
+			color: var(--white);
 		}
 	}
 }

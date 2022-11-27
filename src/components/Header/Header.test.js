@@ -1,4 +1,4 @@
-import { renderWithProviders } from '../../testUtils';
+import { renderWithProviders } from '@/testUtils';
 import Header from './Header';
 
 describe('Componente Header', () => {

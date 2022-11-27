@@ -1,4 +1,4 @@
-import { renderWithProviders } from '../../testUtils';
+import { renderWithProviders } from '@/testUtils';
 import ContentMain from './ContentMain';
 
 describe('Componente ContentMain', () => {
