@@ -3,3 +3,9 @@
 main {
 	margin: 0 10vw;
 }
+
+@media (max-width: 800px) {
+	main {
+		margin: 0 4vw;
+	}
+}

@@ -17,3 +17,10 @@
 		padding-right: 1rem;
 	}
 }
+
+
+@media (max-width: 800px) {
+	.textFilter__container {
+		width: 100%;
+	}
+}

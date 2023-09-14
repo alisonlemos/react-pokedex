@@ -9,6 +9,7 @@
 	overflow-y: scroll;
 	scrollbar-color: var(--red) var(--light-gray);
 	padding-right: 0.5rem;
+
 	&::-webkit-scrollbar {
 		width: 0.5rem;
 	}
@@ -30,11 +31,13 @@
 	flex-direction: column;
 	gap: 0.5rem;
 	margin: 1rem 0;
+
 	.item__imgContainer {
 		background-color: var(--light-gray);
 		border-radius: 0.5rem;
 		position: relative;
 		padding: 1rem;
+
 		.item__favoriteIcon {
 			display: none;
 			color: var(--red);
@@ -42,18 +45,22 @@
 			font-size: 1rem;
 			right: 1rem;
 			top: 0.1rem;
+
 			&.item__favorited {
 				display: block;
 			}
 		}
+
 		img {
 			width: 180px;
 			height: 150px;
 		}
 	}
+
 	.item__national_number {
 		color: var(--dark-gray);
 	}
+
 	.item__name {
 		color: var(--font);
 		font-size: 1.5rem;
@@ -64,6 +71,7 @@
 		color: var(--white);
 		display: flex;
 		gap: 0.5rem;
+
 		@mixin color-modifiers {
 			@each $name, $hex in $pokemon-type-colors {
 				&__#{$name} {
@@ -73,6 +81,7 @@
 				}
 			}
 		}
+
 		.types__chip {
 			@include color-modifiers;
 		}
@@ -83,4 +92,12 @@
 	.item__favoriteIcon {
 		display: block;
 	}
+}
+
+@media (max-width: 800px) {
+
+	.pokemonList__container {
+		width: 100%;
+	}
+
 }

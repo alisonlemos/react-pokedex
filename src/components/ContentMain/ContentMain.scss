@@ -1,8 +1,17 @@
 .contentMain__section {
 	display: flex;
+
 	aside {
 		display: flex;
 		flex-direction: column;
 		width: 15%;
+	}
+}
+
+@media (max-width: 800px) {
+	.contentMain__section {
+		aside {
+			display: none;
+		}
 	}
 }

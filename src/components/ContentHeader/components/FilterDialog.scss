@@ -1,0 +1,29 @@
+.filterDialog {
+
+    &__toolbar {
+        justify-content: space-between;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__content {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .filterDialog {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .filterDialog {
+        button {
+            width: 100%;
+        }
+    }
+}

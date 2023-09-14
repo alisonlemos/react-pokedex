@@ -2,20 +2,32 @@
 	color: var(--dark-gray);
 	align-items: center;
 	gap: 1rem;
+
 	&.MuiFormControl-root {
 		flex-direction: row;
 	}
+
 	.MuiOutlinedInput-notchedOutline {
 		border-color: var(--red);
 		border-radius: 2rem;
 	}
+
 	.MuiInputBase-root:hover {
 		.MuiOutlinedInput-notchedOutline {
 			border-color: var(--red);
 		}
 	}
+
 	svg,
 	.MuiOutlinedInput-input {
 		color: var(--red);
+	}
+}
+
+@media (max-width: 425px) {
+	.pokedex__selectOrder {
+		.MuiInputBase-root {
+			width: 100%;
+		}
 	}
 }
