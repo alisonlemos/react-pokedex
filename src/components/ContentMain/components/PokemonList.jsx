@@ -7,7 +7,7 @@ import { faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { updateFavoriteList } from '@/store/pokedexSlice';
-import notFoundImage from '@/assets/images/no-image.png';
+import AsyncImage from './AsyncImage';
 
 import './PokemonList.scss';
 
@@ -25,17 +25,6 @@ function PokemonList() {
 			(favoriteItem) => favoriteItem.national_number === pokemon.national_number
 		);
 	};
-
-	const loadImage = function (url_image, alt_image) {
-		const image = new Image();
-		image.src = url_image;
-		const resultUrl = image.width !== 0 ? url_image : notFoundImage;
-
-		return <img
-			src={resultUrl}
-			alt={alt_image}
-		/>
-	}
 
 	return (
 		<div className="pokemonList__container">
@@ -55,7 +44,10 @@ function PokemonList() {
 									icon={isFavoriteItem(pokemon) ? faHeartSolid : faHeart}
 								/>
 							</IconButton>
-							{loadImage(pokemon.sprites.large, pokemon.name)}
+							<AsyncImage
+								src={pokemon.sprites.large}
+								alt={pokemon.name}
+							/>
 						</div>
 						<span className="item__national_number">
 							Nº {pokemon.national_number}

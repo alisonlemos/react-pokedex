@@ -61,7 +61,6 @@ export const pokedexSlice = createSlice({
 			state.loading = action.payload;
 		},
 		resetFilters: (state) => {
-			console.log(121);
 			state.categoriesFilter = initialState.categoriesFilter;
 			state.favoriteFilter = initialState.favoriteFilter
 		},
