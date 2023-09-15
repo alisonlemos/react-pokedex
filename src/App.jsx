@@ -76,7 +76,7 @@ function App() {
 			dispatch(toggleLoading(true));
 
 			const data = favoriteFilter ? favoriteList : originalPokemonList;
-			const filteredData = filterBySearchKey(searchKey, data);
+			const filteredData = filterBySearchKey(searchKey.toLowerCase(), data);
 			const filteredByCategoryData = filterByCategory(
 				filteredData,
 				categoriesFilter
